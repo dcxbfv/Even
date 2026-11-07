@@ -1,0 +1,78 @@
+label {
+    text-shadow:0px 0px 10px #00f3ff,
+                0px 0px 20px #00f3ff,
+                0px 0px 40px #00f3ff;
+    font-family:'Tahoma';
+    color: white;
+    font-size: 30px;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    text-align: center;
+    margin: 7%
+}
+#Number {
+    background:linear-gradient(135deg , #f20 , #f42 , #f47);
+    width: 100px;
+    padding: 5px;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    border: 7.5px double yellow;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px #00f3ff,
+                 0px 0px 20px #00f3ff,
+                 0px 0px 40px #00f3ff;
+}
+#resultb {
+    padding: 10px;
+    background: linear-gradient(135deg , green , yellow);
+    color: darkblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    text-shadow: 0px 0px 10px teal,
+                 0px 0px 20px teal,
+                 0px 0px 40px teal;
+}
+#result {
+    text-shadow: 0px 0px 10px white,
+                 0px 0px 20px white,
+                 0px 0px 40px white;
+    animation:text-shadow 1s linear infinite;
+    font-family: 'Tahoma';
+}
+@keyframes text-shadow {
+    100%{
+        transform: scale(1.15);
+    }
+}
+.dev {
+    display:flex;
+    justify-content: center;
+    direction: rtl;
+}
+.tav , .name {
+    flex: 2;
+    color: wheat;
+    font-size: 40px;
+    text-shadow :0px 0px 10px yellowgreen ,
+                 0px 0px 20px yellowgreen ,
+                 0px 0px 40px yellowgreen ;
+    animation :width 2.5s linear infinite;
+}
+@keyframes width {
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+#resultb:hover {
+    transform: scale(1.2);
+    border: 3px solid black;
+}
+#Number:focus {
+    transition: width 1s ease;
+    width :150px
+}
